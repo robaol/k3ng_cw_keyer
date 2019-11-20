@@ -1,12 +1,7 @@
 
-// ######## ########  ######  ######## 
-//    ##    ##       ##    ##    ##    
-//    ##    ##       ##          ##    
-//    ##    ######    ######     ##    
-//    ##    ##             ##    ##    
-//    ##    ##       ##    ##    ##    
-//    ##    ########  ######     ##    
-
+/*
+ * M5RAO 
+ */
 
 #ifndef keyer_pin_settings_h
 #define keyer_pin_settings_h
@@ -14,13 +9,13 @@
 #define paddle_left 2
 #define paddle_right 5
 #define tx_key_line_1 11       // (high = key down/tx on)
-#define tx_key_line_2 0
+#define tx_key_line_2 22
 #define tx_key_line_3 0
 #define tx_key_line_4 0
 #define tx_key_line_5 0
 #define tx_key_line_6 0
 #if !defined(FEATURE_ETHERNET) && !defined(FEATURE_SINEWAVE_SIDETONE)
-  #define sidetone_line 4      // connect a speaker for sidetone (pin 4 is used by the Ethernet shield!)
+  #define sidetone_line 3      // connect a speaker for sidetone (pin 4 is used by the Ethernet shield!)
 #else
   #if defined(FEATURE_SINEWAVE_SIDETONE_USING_TIMER_1)
     #define sidetone_line 12   // Arduino Uno: sidetone_line = 9 or 10 ; Mega: sidetone_line = 11, 12, or 13 (Further info: https://www.pjrc.com/teensy/td_libs_TimerOne.html )
@@ -31,19 +26,19 @@
 #endif
 #define potentiometer A0        // Speed potentiometer (0 to 5 V) Use pot from 1k to 10k
 #define ptt_tx_1 13              // PTT ("push to talk") lines
-#define ptt_tx_2 0              //   Can be used for keying fox transmitter, T/R switch, or keying slow boatanchors
+#define ptt_tx_2 23              //   Can be used for keying fox transmitter, T/R switch, or keying slow boatanchors
 #define ptt_tx_3 0              //   These are optional - set to 0 if unused
 #define ptt_tx_4 0
 #define ptt_tx_5 0
 #define ptt_tx_6 0
-#define tx_key_dit 0            // if defined, goes active for dit (any transmitter) - customized with tx_key_dit_and_dah_pins_active_state and tx_key_dit_and_dah_pins_inactive_state
-#define tx_key_dah 0            // if defined, goes active for dah (any transmitter) - customized with tx_key_dit_and_dah_pins_active_state and tx_key_dit_and_dah_pins_inactive_state
+#define tx_key_dit 24            // if defined, goes active for dit (any transmitter) - customized with tx_key_dit_and_dah_pins_active_state and tx_key_dit_and_dah_pins_inactive_state
+#define tx_key_dah 25            // if defined, goes active for dah (any transmitter) - customized with tx_key_dit_and_dah_pins_active_state and tx_key_dit_and_dah_pins_inactive_state
 
 #define potentiometer_enable_pin 0  // if defined, the potentiometer will be enabled only when this pin is held low; set to 0 to ignore this pin
 
 #ifdef FEATURE_COMMAND_BUTTONS
   #define analog_buttons_pin A1
-  #define command_mode_active_led 0
+  #define command_mode_active_led 26
 #endif //FEATURE_COMMAND_BUTTONS
 
 
@@ -109,9 +104,9 @@
 #ifdef FEATURE_CW_DECODER
   #define cw_decoder_pin A3//A11 //A5 //A3  
   #ifdef OPTION_CW_DECODER_GOERTZEL_AUDIO_DETECTOR
-    #define cw_decoder_audio_input_pin 0 // this must be an analog pin!
+    #define cw_decoder_audio_input_pin A3 // this must be an analog pin!
   #endif //OPTION_CW_DECODER_GOERTZEL_AUDIO_DETECTOR
-  #define cw_decoder_indicator 24
+  #define cw_decoder_indicator 28
 #endif //FEATURE_CW_DECODER
 
 
