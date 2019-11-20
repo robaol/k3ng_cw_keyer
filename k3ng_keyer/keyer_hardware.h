@@ -29,6 +29,7 @@
 // #define HARDWARE_YCCC_SO2R_MINI // edit these files: keyer_pin_settings_yccc_so2r_mini.h, keyer_settings_yccc_so2r_mini.h, keyer_features_and_options_yccc_so2r_mini.h
 // #define HARDWARE_TEST_EVERYTHING
 // #define HARDWARE_TEST
+//#define HARDWARE_M5RAO
 
 
 /* 

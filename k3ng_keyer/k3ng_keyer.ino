@@ -1201,6 +1201,8 @@ Recent Update History
   #include "keyer_features_and_options_iz3gme.h"
 #elif defined(HARDWARE_YCCC_SO2R_MINI)
   #include "keyer_features_and_options_yccc_so2r_mini.h"  
+#elif defined(HARDWARE_M5RAO)
+  #include "keyer_features_and_options_m5rao.h"  
 #else
   #include "keyer_features_and_options.h"
 #endif
@@ -1275,6 +1277,9 @@ Recent Update History
 #elif defined(HARDWARE_YCCC_SO2R_MINI)
   #include "keyer_pin_settings_yccc_so2r_mini.h"
   #include "keyer_settings_yccc_so2r_mini.h"  
+#elif defined(HARDWARE_M5RAO)
+  #include "keyer_pin_settings_m5rao.h"
+  #include "keyer_settings_m5rao.h"  
 #else
   #include "keyer_pin_settings.h"
   #include "keyer_settings.h"
