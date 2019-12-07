@@ -24,7 +24,7 @@
 #define FEATURE_AUTOSPACE
 // #define FEATURE_FARNSWORTH
 // #define FEATURE_DL2SBA_BANKSWITCH       // Switch memory banks feature as described here: http://dl2sba.com/index.php?option=com_content&view=article&id=131:nanokeyer&catid=15:shack&Itemid=27#english
-// #define FEATURE_LCD_4BIT                // classic LCD display using 4 I/O lines
+#define FEATURE_LCD_4BIT                // classic LCD display using 4 I/O lines
 // #define FEATURE_LCD_8BIT                // classic LCD display using 8 I/O lines
 // #define FEATURE_LCD_ADAFRUIT_I2C          // Adafruit I2C LCD display using MCP23017 at addr 0x20
 // #define FEATURE_LCD_ADAFRUIT_BACKPACK    // Adafruit I2C LCD Backup using MCP23008 (courtesy Josiah Ritchie, KE0BLL)
@@ -141,7 +141,3 @@
 #error(Expecting HARDWARE_M5RAO to be defined)
 
 #endif //HARDWARE_M5RAO
-
-
-
-

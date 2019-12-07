@@ -45,11 +45,11 @@
 //lcd pins
 #if defined(FEATURE_LCD_4BIT) || defined(FEATURE_LCD_8BIT)
   #define lcd_rs A2
-  #define lcd_enable 10  // pin 10 is used by Ethernet shield and will conflict with that
-  #define lcd_d4 6
-  #define lcd_d5 7
-  #define lcd_d6 8
-  #define lcd_d7 9
+  #define lcd_enable 12  // pin 10 is used by Ethernet shield and will conflict with that
+  #define lcd_d4 35
+  #define lcd_d5 34
+  #define lcd_d6 33
+  #define lcd_d7 32
 #endif //FEATURE_LCD_4BIT || defined(FEATURE_LCD_8BIT)
 
 #if defined(FEATURE_LCD_8BIT) // addition four data lines for 8 bit LCD control
@@ -173,4 +173,3 @@ FEATURE_SIDETONE_SWITCH
   #error "Multiple pin_settings.h files included somehow..."
 
 #endif //keyer_pin_settings_h
-
