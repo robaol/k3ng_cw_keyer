@@ -102,7 +102,7 @@
 #endif //FEATURE_STRAIGHT_KEY
 
 #ifdef FEATURE_CW_DECODER
-  #define cw_decoder_pin A3//A11 //A5 //A3  
+  #define cw_decoder_pin 29//A11 //A5 //A3  
   #ifdef OPTION_CW_DECODER_GOERTZEL_AUDIO_DETECTOR
     #define cw_decoder_audio_input_pin A3 // this must be an analog pin!
   #endif //OPTION_CW_DECODER_GOERTZEL_AUDIO_DETECTOR
