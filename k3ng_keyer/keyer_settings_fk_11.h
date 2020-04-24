@@ -1,3 +1,5 @@
+// Funtronics FK-11
+
 // Initial and hardcoded settings
 #define initial_speed_wpm 26             // "factory default" keyer speed setting
 #define initial_command_mode_speed_wpm 20 // "factory default" command mode speed setting 
@@ -68,7 +70,7 @@
 #define eeprom_write_time_ms 30000
 
 #ifdef FEATURE_COMMAND_BUTTONS
-  #define analog_buttons_number_of_buttons 4  // includes the command button (command button + 3 memory buttons = 4)
+  #define analog_buttons_number_of_buttons 5  // includes the command button (command button + 3 memory buttons = 4)
   #define analog_buttons_r1 10
   #define analog_buttons_r2 1
 #endif
@@ -99,7 +101,7 @@
 
 
 #ifdef FEATURE_WINKEY_EMULATION
-  #if defined(OPTION_WINKEY_UCXLOG_9600_BAUD) || defined(FEATURE_SO2R_BASE)
+  #ifdef OPTION_WINKEY_UCXLOG_9600_BAUD || defined(FEATURE_SO2R_BASE)
     #define WINKEY_DEFAULT_BAUD 9600
   #else
     #define WINKEY_DEFAULT_BAUD 1200
@@ -143,6 +145,8 @@
 #define WINKEY_RETURN_THIS_FOR_ADMIN_SPEED_A2D 0x00
 
 #endif //FEATURE_WINKEY_EMULATION
+
+
 
 #define PRIMARY_SERIAL_PORT &Serial
 #define PRIMARY_SERIAL_PORT_BAUD 115200     // This applies only when the port is in Command Line Interface mode.  In Winkey mode it will default to 1200.
@@ -198,7 +202,7 @@
 #define FEATURE_INTERNET_LINK_DEFAULT_RCV_UDP_PORT 8888
 #define FEATURE_INTERNET_LINK_BUFFER_TIME_MS 500 
 
-#if defined(FEATURE_4x4_KEYPAD) || defined(FEATURE_3x4_KEYPAD)
+#if defined(FEATURE_4x4_KEYPAD)|| defined (FEATURE_3x4_KEYPAD)
   #define KEYPAD_ROWS 4 //KeyPad Rows
   #if defined(FEATURE_4x4_KEYPAD)
     #define KEYPAD_COLS 4 //keypad Columns
@@ -217,7 +221,7 @@
   #define mem10 9
   #define mem11 10
   #define mem12 11
-#endif //#if defined(FEATURE_4x4_KEYPAD) || defined(FEATURE_3x4_KEYPAD)
+#endif //#if defined(FEATURE_4x4_KEYPAD)|| defined (FEATURE_3x4_KEYPAD)
 
 #define initial_sidetone_mode 1            // Sidetone mode, 0=OFF, 1=ON, 2=PADDLE_ONLY
 
@@ -275,4 +279,5 @@
 
 #define custom_startup_field "your custom text here"   // an example could be callsign and name, eg. "AB1XYZ Bob", (or "Worlds best operator" which requires a 20 column display), string length shouldo be no more than the number of columns on the display
 
-#define command_mode_acknowledgement_character 'R'
+#define command_mode_acknowledgement_character 'E'
+

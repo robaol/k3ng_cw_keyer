@@ -309,4 +309,7 @@
   #endif
 #endif
 
+#define custom_startup_field "your custom text here"   // an example could be callsign and name, eg. "AB1XYZ Bob", (or "Worlds best operator" which requires a 20 column display), string length shouldo be no more than the number of columns on the display
+
+#define command_mode_acknowledgement_character 'E'
 
