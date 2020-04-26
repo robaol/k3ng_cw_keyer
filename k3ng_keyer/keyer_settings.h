@@ -40,8 +40,8 @@
 #define winkey_xoff_threshold 20         // the number of chars in the buffer when we begin sending XOFFs
 #define winkey_xon_threshold 10          // the number of chars in the buffer below which we deactivate XOFF
 #define default_memory_repeat_time 3000  // time in milliseconds
-#define LCD_COLUMNS 16
-#define LCD_ROWS 2
+#define LCD_COLUMNS 20
+#define LCD_ROWS 4
 #define lcd_i2c_address_mathertel_PCF8574 0x27             // I2C address of display
 #define hell_pixel_microseconds 4025
 #define program_memory_limit_consec_spaces 1
@@ -153,7 +153,7 @@
 #endif
 
 
-#define CW_DECODER_SCREEN_COLUMNS 120        // word wrap at this many columns
+#define CW_DECODER_SCREEN_COLUMNS 40        // word wrap at this many columns
 #define CW_DECODER_SPACE_PRINT_THRESH 4.5   // print space if no tone for this many element lengths
 #define CW_DECODER_SPACE_DECODE_THRESH 2.0  // invoke character decode if no tone for this many element lengths
 #define CW_DECODER_NOISE_FILTER 20          // ignore elements shorter than this (mS)
