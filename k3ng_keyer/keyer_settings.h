@@ -20,8 +20,8 @@
 #define initial_ptt_lead_time_tx6 0         // PTT lead time in mS
 #define initial_ptt_tail_time_tx6 10         // PTT tail time in mS
 #define initial_qrss_dit_length 1        // QRSS dit length in seconds
-#define initial_pot_wpm_low_value 13     // Potentiometer WPM fully CCW
-#define initial_pot_wpm_high_value 35    // Potentiometer WPM fully CW
+#define initial_pot_wpm_low_value 5     // Potentiometer WPM fully CCW (13)
+#define initial_pot_wpm_high_value 25    // Potentiometer WPM fully CW (35)
 #define wpm_limit_low 5
 #define wpm_limit_high 60
 #define potentiometer_change_threshold 0.9 // don't change the keyer speed until pot wpm has changed more than this
